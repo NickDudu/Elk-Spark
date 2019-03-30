@@ -21,7 +21,7 @@ object EsSpark {
     //val index = args(0)
     //Connecting ES server
     val spark: SparkSession = SparkSession.builder().appName("test").master("spark://xxxxx:7077").getOrCreate()
-    val df = spark.read.format("org.elasticsearch.spark.sql").option("es.nodes.wan.only", "true").option("es.port", "9200").option("es.nodes", "cn2-prd-infrastructure-logging-elkclient-4.fflive.local").option("es.index.auto.create", "true")
+    val df = spark.read.format("org.elasticsearch.spark.sql").option("es.nodes.wan.only", "true").option("es.port", "9200").option("es.nodes", "elkserver").option("es.index.auto.create", "true")
 
     //Getting the indices list and trim out the datetime
     val fullindexlist = Seq("/bin/sh", "-c", "curl 'http://xxxxx:9200/_cat/indices?pretty&v&s=index'  |  awk '{print $3}'").!!
