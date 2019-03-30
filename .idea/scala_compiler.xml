@@ -3,9 +3,7 @@
   <component name="ScalaCompilerConfiguration">
     <profile name="Maven 1" modules="Spark-Vegimite">
       <parameters>
-        <parameter value="-make:transitive" />
-        <parameter value="-dependencyfile" />
-        <parameter value="C:\Users\hun1\IdeaProjects\Spark-Vegimite\target/.scala_dependencies" />
+        <parameter value="-target:jvm-1.5" />
       </parameters>
     </profile>
   </component>
