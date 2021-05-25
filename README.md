@@ -14,3 +14,7 @@ Benefits:
 3, Log Analytics
 
 4, Load archived Data from Parquet and analyse in Spark is lightning-fast
+
+## Diagram
+![Architecture](/ZhangxinArchitect.jpeg)
+Format: ![Alt Text](url)
