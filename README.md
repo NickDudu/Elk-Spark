@@ -18,3 +18,5 @@ Benefits:
 ## Diagram
 ![Architecture](/ZhangxinArchitect.jpeg)
 Format: ![Alt Text](url)
+### second one
+![Alt text](/ZhangxinArchitect.jpeg?raw=true "Architecture")
